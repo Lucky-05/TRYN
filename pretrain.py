@@ -76,7 +76,7 @@ for row in range(1, len(cat)):
     ax2 = plt.subplot(2, 1, 1)
     vals = ax2.pcolormesh(t, f, sxx, cmap=cm.jet, vmax=5e-17)
     ax2.set_xlim([min(trace_times_filt), max(trace_times_filt)])
-    ax2.set_xlabel(f'Time (Day Hour:Minute)', fontweight='bold')
+    ax2.set_xlabel(f'(S)', fontweight='bold')
     ax2.set_ylabel('Frequency (Hz)', fontweight='bold')
     #ax2.axvline(x=arrival, c='red') ##Not graphed for training
     cbar = plt.colorbar(vals, orientation='horizontal')

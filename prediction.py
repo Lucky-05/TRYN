@@ -17,7 +17,7 @@ import subprocess
 
 #Lin to realesrgan portable for not using cmake https://github.com/xinntao/Real-ESRGAN/releases
 
-esrgan_cmd = f"realesrgan-ncnn-vulkan.exe -i test0.png -o test0_out.png"
+esrgan_cmd = f"realesrgan-ncnn-vulkan.exe -i test1.png -o test1_out.png"
 process = subprocess.Popen(esrgan_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
 output, error = process.communicate()
 
@@ -58,5 +58,5 @@ def process_image(image_path):
 
 # Example usage
 if __name__ == "__main__":
-    image_path = "test0.png"  # Replace with your image file path
+    image_path = "test1.png"  # Replace with your image file path
     process_image(image_path)
