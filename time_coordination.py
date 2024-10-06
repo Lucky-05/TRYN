@@ -36,7 +36,7 @@ print(f"Procesando archivo: {filename}")
 file = f'./data/lunar/training/data/S12_GradeA/{filename}.mseed'
 file = os.path.join(r"D:\Space Aps\space_apps_2024_seismic_detection\space_apps_2024_seismic_detection", file)
 
-try:
+try:   
     # Intentar leer el archivo
     stream = read(file)
 except FileNotFoundError:
